@@ -2,7 +2,7 @@ import pickle
 
 
 def load_model():
-    return pickle.load(open('model.pkl', 'rb'))
+    return PredictiveModel(pickle.load(open('model.pkl', 'rb')))
 
 
 class PredictiveModel:

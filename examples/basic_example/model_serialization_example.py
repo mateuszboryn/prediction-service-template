@@ -1,7 +1,6 @@
 import pickle
 from sklearn import linear_model
 import pandas as pd
-import predictive_model
 
 
 # Model training:
@@ -16,4 +15,4 @@ model = linear_model.LinearRegression()
 X_train = training_data[["x"]]
 y_train = training_data[["y"]]
 model.fit(X_train, y_train)
-pickle.dump(predictive_model.PredictiveModel(model), open('model.pkl', 'wb'))
+pickle.dump(model, open('model.pkl', 'wb'))

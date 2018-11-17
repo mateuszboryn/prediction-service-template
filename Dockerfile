@@ -6,4 +6,4 @@ COPY requirements.txt /app/
 RUN pip install -r ./requirements.txt
 COPY model.pkl /app/
 
-COPY main.py __init__.py predictive_model.py /app/
+COPY main.py __init__.py predictive_model.py documentation.py /app/
