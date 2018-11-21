@@ -1,4 +1,6 @@
+numpy==1.13.3
+scipy==0.19.1
+pandas==0.23
+scikit_learn==0.19.1
 flask==1.0.2
 flask-restplus==0.12.1
-scikit_learn==0.19.1
-pandas==0.23
