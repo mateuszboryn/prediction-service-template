@@ -8,7 +8,13 @@ import os
 
 
 app = Flask(__name__)
-api = Api(app, version=doc.api['version'], title=doc.api['title'], description=doc.api['description'])
+api = Api(
+    app,
+    version=doc.api['version'],
+    title=doc.api['title'],
+    description=doc.api['description'],
+    doc='/swagger-ui.html'
+)
 
 
 predictive_model = predictive_model.load_model()

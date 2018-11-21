@@ -15,6 +15,20 @@ Go to:
 
 [examples](examples)
 
+# Endpoints
+
+## Swagger documentation
+
+[/swagger-ui.html](http://localhost:5000/swagger-ui.html)
+
+## Health check
+
+[/health](http://localhost:5000/health)
+
+## Prediction
+
+[/prediction](http://localhost:5000/prediction?x=1)
+
 # Customizations
 
 ## Custom prediction model
