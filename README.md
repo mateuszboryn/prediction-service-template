@@ -2,14 +2,19 @@
 
 Template for deploying prediction services as REST API
 
-# Build and run sample
+# Quickstart
+
+Build docker image:
 
     docker build . -t prediction-service-template
+    
+Run docker image:
+    
     docker run  --rm -it -p 80:80 prediction-service-template
 
 Go to:
 
-    http://localhost/prediction?x=2
+[http://localhost/prediction?x=2](http://localhost/prediction?x=2)
     
 # Examples
 
