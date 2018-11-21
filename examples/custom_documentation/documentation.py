@@ -3,8 +3,8 @@ from flask_restplus import fields
 
 api = dict(
     version='1.0',
-    title='Example Prediction Service',
-    description='Example Prediction Service Description'
+    title='Example Prediction Service with documentation',
+    description='Example Prediction Service Description with documentation'
 )
 
 prediction_request_fields = {
