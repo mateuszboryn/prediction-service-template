@@ -4,6 +4,7 @@ from flask import Flask
 from flask_restplus import Api, Resource
 import predictive_model
 import documentation as doc
+import os
 
 
 app = Flask(__name__)
@@ -69,4 +70,7 @@ class PredictionResource(Resource):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    if 'ENVIRONMENT' in os.environ and os.environ['ENVIRONMENT'] == 'production':
+        app.run(port=80, host='0.0.0.0')
+    else:
+        app.run(port=5000, host='0.0.0.0', debug=True)
